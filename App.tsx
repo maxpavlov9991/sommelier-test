@@ -31,12 +31,13 @@ export default function App() {
       <H5>H5</H5>
       <H6>H6</H6>
       <Text>Text</Text>
-      <Header>Header</Header>
+      <Header size='h1'>Header</Header>
       <Image image='https://reactnative.dev/img/tiny_logo.png'></Image>
       <Box>
-        <Button onPress={buttonPressHandler}>{'+ 1'}</Button>
         <Text>{counter}</Text>
       </Box>
+      <Button icon={''} onPress={buttonPressHandler} text={'+ 1'}/>
+      {counter}
       <StarsRating rating={5} score={3}/>
     </View>
   );
